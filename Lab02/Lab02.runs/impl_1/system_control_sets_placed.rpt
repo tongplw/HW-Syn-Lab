@@ -1,0 +1,85 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Feb 16 16:09:39 2020
+| Host         : tongplw running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
+| Design       : system
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |   139 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           19 |
+|      2 |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |           20 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+---------------+------------------+------------------+----------------+
+|          Clock Signal          | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------+---------------+------------------+------------------+----------------+
+|  genblk1[0].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[10].fdiv/clkDiv_reg_0 |               |                  |                1 |              1 |
+|  genblk1[2].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[3].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[8].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[5].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[4].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[6].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[7].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[11].fdiv/clkDiv_reg_0 |               |                  |                1 |              1 |
+|  genblk1[14].fdiv/clkDiv_reg_0 |               |                  |                1 |              1 |
+|  genblk1[13].fdiv/clkDiv_reg_0 |               |                  |                1 |              1 |
+|  genblk1[9].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[12].fdiv/clkDiv_reg_0 |               |                  |                1 |              1 |
+|  genblk1[15].fdiv/clkDiv_reg_0 |               |                  |                1 |              1 |
+|  genblk1[1].fdiv/clkDiv_reg_0  |               |                  |                1 |              1 |
+|  genblk1[16].fdiv/clkDiv_reg_0 |               |                  |                1 |              1 |
+|  genblk1[17].fdiv/clkDiv       |               |                  |                1 |              1 |
+|  clk_IBUF_BUFG                 |               |                  |                1 |              1 |
+|  fdivTarget/CLK                |               |                  |                1 |              2 |
++--------------------------------+---------------+------------------+------------------+----------------+
+
+

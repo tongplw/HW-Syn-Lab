@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab02.srcs/sources_1/new/clockDiv.v" \
+"../../../../Lab02.srcs/sources_1/new/hexTo7Segment.v" \
+"../../../../Lab02.srcs/sources_1/new/quadSevenSeg.v" \
+"../../../../Lab02.srcs/sources_1/new/system.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
