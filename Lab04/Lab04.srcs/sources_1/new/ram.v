@@ -26,6 +26,7 @@ module ram(
     input wire oe , // Output Enable
     input wire clk,
     input wire we,
+    input wire re,
     output reg [7:0] d_out // Data out
     );
     
@@ -34,13 +35,23 @@ reg [7:0] addr_tem;
 
 always @(posedge clk)
 begin
-if(we)
-begin
-    mem[addr] <= d_in;
-    addr = addr + 1;
-end
-if(oe)
-    d_out = mem[addr-1];
-end
+    if(we)
+        begin
+            mem[addr] <= d_in;
+            addr = addr + 1;
+        end
+    if(oe && addr != 0)
+        begin
+            d_out = mem[addr-1];
+            mem[addr] <= 0;
+            addr = addr - 1;
+        end
+    
+    if(re)
+        begin
+            addr = 0;
+            mem[addr] <= 0;
+        end
+    end
 endmodule
 

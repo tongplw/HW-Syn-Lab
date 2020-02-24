@@ -27,7 +27,8 @@ module system(
     input clk,
     input [15:0]sw,
     input btnU,
-    input btnC
+    input btnC,
+    input btnD
     );
     
 wire [3:0] num0;
@@ -57,11 +58,12 @@ clockDiv fdivTarget(targetClk, tclk[18]);
 quadSevenSeg q7Seg(seg, dp, an0, an1, an2, an3, num0, num1, num2, num3, targetClk);
 
 
-wire push, pop;
+wire push, pop, reset;
 singlePulser spu(push, btnU, targetClk);
 singlePulser spc(pop, btnC, targetClk);
+singlePulser spr(reset, btnD, targetClk);
 
-ram stack(sw, {num1,num0}, pop, targetClk, push, {num3,num2});
+ram stack(sw, {num1,num0}, pop, targetClk, push, reset, {num3,num2});
 
 
 endmodule
