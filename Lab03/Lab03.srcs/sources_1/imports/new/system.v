@@ -57,21 +57,21 @@ clockDiv fdivTarget(targetClk, tclk[18]);
 quadSevenSeg q7Seg(seg, dp, an0, an1, an2, an3, num0, num1, num2, num3, targetClk);
 
 
-singlePulser spu0(up0, sw[1], clk);
-singlePulser spu1(up1, sw[3], clk);
-singlePulser spu2(up2, sw[5], clk);
-singlePulser spu3(up3, sw[7], clk);
-singlePulser spd0(down0, sw[0], clk);
-singlePulser spd1(down1, sw[2], clk);
-singlePulser spd2(down2, sw[4], clk);
-singlePulser spd3(down3, sw[6], clk);
+singlePulser spu0(up0, sw[1], targetClk);
+singlePulser spu1(up1, sw[3], targetClk);
+singlePulser spu2(up2, sw[5], targetClk);
+singlePulser spu3(up3, sw[7], targetClk);
+singlePulser spd0(down0, sw[0], targetClk);
+singlePulser spd1(down1, sw[2], targetClk);
+singlePulser spd2(down2, sw[4], targetClk);
+singlePulser spd3(down3, sw[6], targetClk);
 
 wire c0, c1, c2, c3;
 wire b0, b1, b2, b3;
 
-bcd bcd0(num0, c0, b0, up0, down0, btnU|c3, btnC|b3, clk);
-bcd bcd1(num1, c1, b1, up1|c0, down1|b0, btnU|c3, btnC|b3, clk);
-bcd bcd2(num2, c2, b2, up2|c1, down2|b1, btnU|c3, btnC|b3, clk);
-bcd bcd3(num3, c3, b3, up3|c2, down3|b2, btnU|c3, btnC|b3, clk);
+bcd bcd0(num0, c0, b0, up0, down0, btnU|c3, btnC|b3, targetClk);
+bcd bcd1(num1, c1, b1, up1|c0, down1|b0, btnU|c3, btnC|b3, targetClk);
+bcd bcd2(num2, c2, b2, up2|c1, down2|b1, btnU|c3, btnC|b3, targetClk);
+bcd bcd3(num3, c3, b3, up3|c2, down3|b2, btnU|c3, btnC|b3, targetClk);
 
 endmodule

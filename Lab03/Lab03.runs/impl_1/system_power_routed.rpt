@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon Feb 17 13:42:04 2020
+| Date             : Mon Feb 24 15:26:45 2020
 | Host             : tongplw running 64-bit major release  (build 9200)
 | Command          : report_power -file system_power_routed.rpt -pb system_power_summary_routed.pb -rpx system_power_routed.rpx
 | Design           : system
@@ -53,11 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      227 |       --- |             --- |
+| Slice Logic    |    <0.001 |      228 |       --- |             --- |
 |   LUT as Logic |    <0.001 |       84 |     20800 |            0.40 |
 |   Register     |    <0.001 |       61 |     41600 |            0.15 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       65 |       --- |             --- |
-| Signals        |     0.001 |      125 |       --- |             --- |
+| Signals        |     0.001 |      124 |       --- |             --- |
 | I/O            |     0.027 |       23 |       106 |           21.70 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.101 |          |           |                 |
@@ -70,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.003 |      0.010 |
+| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |
 | Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |
 | Vcco33    |       3.300 |     0.008 |       0.007 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

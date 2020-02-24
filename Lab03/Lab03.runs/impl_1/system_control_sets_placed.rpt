@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Feb 17 13:40:43 2020
+| Date         : Mon Feb 24 15:26:20 2020
 | Host         : tongplw running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
 | Design       : system
@@ -34,8 +34,7 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      1 |           26 |
-|      2 |            1 |
+|      1 |           27 |
 |    16+ |            1 |
 +--------+--------------+
 
@@ -61,34 +60,34 @@ Table of Contents
 +--------------------------------+-----------------------+------------------+------------------+----------------+
 |          Clock Signal          |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +--------------------------------+-----------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG                 | spd0/state_i_1__3_n_0 |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | spu0/state_i_1_n_0    |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | spd1/state_i_1__4_n_0 |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | spd3/state_i_1__6_n_0 |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | spd2/state_i_1__5_n_0 |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | spu1/state_i_1__0_n_0 |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | spu2/state_i_1__1_n_0 |                  |                1 |              1 |
-|  clk_IBUF_BUFG                 | spu3/state_i_1__2_n_0 |                  |                1 |              1 |
 |  genblk1[16].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
-|  genblk1[6].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
-|  genblk1[17].fdiv/clkDiv       |                       |                  |                1 |              1 |
-|  genblk1[4].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
-|  genblk1[1].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
 |  genblk1[5].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
+|  genblk1[17].fdiv/clkDiv       |                       |                  |                1 |              1 |
+|  genblk1[6].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
+|  genblk1[1].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
 |  genblk1[2].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
+|  genblk1[4].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
 |  genblk1[3].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
 |  genblk1[10].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
-|  genblk1[11].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
-|  genblk1[9].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
 |  genblk1[8].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
-|  genblk1[7].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
+|  genblk1[9].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
 |  genblk1[0].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
-|  genblk1[14].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
+|  genblk1[11].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
+|  genblk1[7].fdiv/clkDiv_reg_0  |                       |                  |                1 |              1 |
 |  genblk1[12].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
 |  genblk1[15].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
 |  genblk1[13].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
-|  fdivTarget/CLK                |                       |                  |                1 |              2 |
-|  clk_IBUF_BUFG                 |                       |                  |               13 |             33 |
+|  genblk1[14].fdiv/clkDiv_reg_0 |                       |                  |                1 |              1 |
+|  clk_IBUF_BUFG                 |                       |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spd0/state_i_1__3_n_0 |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spd1/state_i_1__4_n_0 |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spd2/state_i_1__5_n_0 |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spu1/state_i_1__0_n_0 |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spd3/state_i_1__6_n_0 |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spu3/state_i_1__2_n_0 |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spu0/state_i_1_n_0    |                  |                1 |              1 |
+|  state_reg_i_2_n_0             | spu2/state_i_1__1_n_0 |                  |                1 |              1 |
+|  state_reg_i_2_n_0             |                       |                  |               13 |             34 |
 +--------------------------------+-----------------------+------------------+------------------+----------------+
 
 
