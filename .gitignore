@@ -84,3 +84,4 @@
 !*.elf
 !*.bmm
 !*.xmp
+!*.data
