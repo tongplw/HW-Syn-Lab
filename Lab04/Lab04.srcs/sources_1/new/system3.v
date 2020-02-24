@@ -56,7 +56,7 @@ clockDiv fdivTarget(targetClk, tclk[18]);
 quadSevenSeg q7Seg(seg, dp, an0, an1, an2, an3, num0, num1, num2, num3, targetClk);
 
 
-reg [7:0] rom [2**10-1:0];
+reg [11:0] rom [2**10-1:0];
 initial $readmemb("rom2.data", rom);
 reg [1:0] mode;
 
