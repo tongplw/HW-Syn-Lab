@@ -52,7 +52,7 @@ generate for(c = 0; c < 18; c = c + 1)
     end
 endgenerate
 
-clockDiv fdivTarget(targetClk, tclk[18]);
+clockDiv fdivTarget(targetClk, tclk[10]);
 
 quadSevenSeg q7Seg(seg, dp, an0, an1, an2, an3, num0, num1, num2, num3, targetClk);
 
