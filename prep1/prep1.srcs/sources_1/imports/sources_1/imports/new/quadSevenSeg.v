@@ -42,8 +42,8 @@ reg [3:0] hexIn;
 wire [6:0] segments;
 assign  segment = segments;
 
-//hexTo7Segment segDecode(segments, hexIn);
-unaryTo7Segment segDecode(segments, hexIn);
+hexTo7Segment segDecode(segments, hexIn);
+//unaryTo7Segment segDecode(segments, hexIn);
 
 assign dp = 1;
 assign {an3, an2, an1, an0} = ~dispEn;

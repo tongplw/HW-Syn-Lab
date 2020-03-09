@@ -27,13 +27,19 @@ module system(
     input clk,
     input [15:0]sw,
     input btnU,
-    input btnC
+    input btnC,
+    input btnD
     );
     
 wire [3:0] num0;
 wire [3:0] num1;
 wire [3:0] num2;
 wire [3:0] num3;
+
+//reg [3:0] num0;
+//reg [3:0] num1;
+//reg [3:0] num2;
+//reg [3:0] num3;
 
 wire targetClk;
 wire an0, an1, an2, an3;
@@ -78,18 +84,42 @@ wire b0, b1, b2, b3;
 
 
 // *********** BINARY COUNTER ****************
-//binaryCounter bc0(num0, c0, b0, up0, down0, btnU|c3, btnC|b3, targetClk);
-//binaryCounter bc1(num1, c1, b1, up1|c0, down1|b0, btnU|c3, btnC|b3, targetClk);
-//binaryCounter bc2(num2, c2, b2, up2|c1, down2|b1, btnU|c3, btnC|b3, targetClk);
-//binaryCounter bc3(num3, c3, b3, up3|c2, down3|b2, btnU|c3, btnC|b3, targetClk);
+binaryCounter bc0(num0, c0, b0, up0, down0, btnU|c3, btnC|b3, targetClk);
+binaryCounter bc1(num1, c1, b1, up1|c0, down1|b0, btnU|c3, btnC|b3, targetClk);
+binaryCounter bc2(num2, c2, b2, up2|c1, down2|b1, btnU|c3, btnC|b3, targetClk);
+binaryCounter bc3(num3, c3, b3, up3|c2, down3|b2, btnU|c3, btnC|b3, targetClk);
 
 
 // *********** UNARY COUNTER ****************
-unaryCounter uc0(num0, c0, b0, up0, down0, num1, btnU, btnC, targetClk);
-unaryCounter uc1(num1, c1, b1, c0, b0, num2, btnU, btnC, targetClk);
-unaryCounter uc2(num2, c2, b2, c1, b1, num3, btnU, btnC, targetClk);
-unaryCounter uc3(num3, c3, b3, c2, b2, 4'b0000, btnU, btnC, targetClk);
+//unaryCounter uc0(num0, c0, b0, up0, down0, num1, btnU, btnC, targetClk);
+//unaryCounter uc1(num1, c1, b1, c0, b0, num2, btnU, btnC, targetClk);
+//unaryCounter uc2(num2, c2, b2, c1, b1, num3, btnU, btnC, targetClk);
+//unaryCounter uc3(num3, c3, b3, c2, b2, 4'b0000, btnU, btnC, targetClk);
 
 
+// *********** STATE MACHINE ****************
+//singlePulser bU(uu, btnU, targetClk);
+//singlePulser bC(cc, btnC, targetClk);
+//singlePulser bD(dd, btnD, targetClk);
+
+//reg [3:0] state;
+
+//always@(posedge targetClk)
+//begin
+//    if (uu) state = state + 1;
+//    if (dd) state = state - 1;
+//    if (cc) state = 0;
+    
+//    if (state == 15) state = 0; // overflow
+//    if (state == 5) state = 4; // underflow
+    
+//    case(state)
+//        4'b0000: begin num3=0; num2=0; num1=0; num0=0; end
+//        4'b0001: begin num3=0; num2=0; num1=0; num0=1; end
+//        4'b0010: begin num3=0; num2=0; num1=1; num0=1; end
+//        4'b0011: begin num3=0; num2=1; num1=1; num0=1; end
+//        4'b0100: begin num3=1; num2=1; num1=1; num0=1; end
+//    endcase
+//end
 
 endmodule
