@@ -9,7 +9,7 @@
 module rom(
     output reg [7:0] data,
     input wire [7:0] addr,
-    input clk
+    input wire clk
     );
     
 parameter width = 8;
