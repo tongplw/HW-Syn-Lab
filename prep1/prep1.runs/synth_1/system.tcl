@@ -31,11 +31,9 @@ set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_output_repo c:/Users/tongplw/Desktop/Vivado/prep1/prep1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/tongplw/Desktop/Vivado/prep1/prep1.srcs/sources_1/new/binaryCounter.v
   C:/Users/tongplw/Desktop/Vivado/prep1/prep1.srcs/sources_1/imports/sources_1/imports/new/clockDiv.v
   C:/Users/tongplw/Desktop/Vivado/prep1/prep1.srcs/sources_1/imports/sources_1/imports/new/hexTo7Segment.v
   C:/Users/tongplw/Desktop/Vivado/prep1/prep1.srcs/sources_1/imports/sources_1/imports/new/quadSevenSeg.v
-  C:/Users/tongplw/Desktop/Vivado/prep1/prep1.srcs/sources_1/imports/sources_1/new/singlePulser.v
   C:/Users/tongplw/Desktop/Vivado/prep1/prep1.srcs/sources_1/imports/sources_1/imports/new/system.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

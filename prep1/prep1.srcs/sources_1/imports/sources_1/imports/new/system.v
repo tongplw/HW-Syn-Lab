@@ -28,31 +28,32 @@ module system(
     input [15:0]sw,
     input btnU,
     input btnC,
-    input btnD
+    input btnD,
+    input btnL
     );
     
-wire [3:0] num0;
-wire [3:0] num1;
-wire [3:0] num2;
-wire [3:0] num3;
+//wire [3:0] num0;
+//wire [3:0] num1;
+//wire [3:0] num2;
+//wire [3:0] num3;
 
-//reg [3:0] num0;
-//reg [3:0] num1;
-//reg [3:0] num2;
-//reg [3:0] num3;
+reg [3:0] num0;
+reg [3:0] num1;
+reg [3:0] num2;
+reg [3:0] num3;
 
 wire targetClk;
 wire an0, an1, an2, an3;
 
 assign an = {an3, an2, an1, an0};
 
-wire [18:0] tclk;
+wire [25:0] tclk;
 
 assign tclk[0] = clk;
 
 genvar c;
 
-generate for(c = 0; c < 18; c = c + 1)
+generate for(c = 0; c < 25; c = c + 1)
     begin
         clockDiv fdiv(tclk[c+1], tclk[c]);
     end
@@ -63,14 +64,14 @@ clockDiv fdivTarget(targetClk, tclk[10]);
 quadSevenSeg q7Seg(seg, dp, an0, an1, an2, an3, num0, num1, num2, num3, targetClk);
 
 
-singlePulser spu0(up0, sw[1], targetClk);
-singlePulser spu1(up1, sw[3], targetClk);
-singlePulser spu2(up2, sw[5], targetClk);
-singlePulser spu3(up3, sw[7], targetClk);
-singlePulser spd0(down0, sw[0], targetClk);
-singlePulser spd1(down1, sw[2], targetClk);
-singlePulser spd2(down2, sw[4], targetClk);
-singlePulser spd3(down3, sw[6], targetClk);
+//singlePulser spu0(up0, sw[1], targetClk);
+//singlePulser spu1(up1, sw[3], targetClk);
+//singlePulser spu2(up2, sw[5], targetClk);
+//singlePulser spu3(up3, sw[7], targetClk);
+//singlePulser spd0(down0, sw[0], targetClk);
+//singlePulser spd1(down1, sw[2], targetClk);
+//singlePulser spd2(down2, sw[4], targetClk);
+//singlePulser spd3(down3, sw[6], targetClk);
 
 wire c0, c1, c2, c3;
 wire b0, b1, b2, b3;
@@ -84,10 +85,10 @@ wire b0, b1, b2, b3;
 
 
 // *********** BINARY COUNTER ****************
-binaryCounter bc0(num0, c0, b0, up0, down0, btnU|c3, btnC|b3, targetClk);
-binaryCounter bc1(num1, c1, b1, up1|c0, down1|b0, btnU|c3, btnC|b3, targetClk);
-binaryCounter bc2(num2, c2, b2, up2|c1, down2|b1, btnU|c3, btnC|b3, targetClk);
-binaryCounter bc3(num3, c3, b3, up3|c2, down3|b2, btnU|c3, btnC|b3, targetClk);
+//binaryCounter bc0(num0, c0, b0, up0, down0, btnU|c3, btnC|b3, targetClk);
+//binaryCounter bc1(num1, c1, b1, up1|c0, down1|b0, btnU|c3, btnC|b3, targetClk);
+//binaryCounter bc2(num2, c2, b2, up2|c1, down2|b1, btnU|c3, btnC|b3, targetClk);
+//binaryCounter bc3(num3, c3, b3, up3|c2, down3|b2, btnU|c3, btnC|b3, targetClk);
 
 
 // *********** UNARY COUNTER ****************
@@ -101,25 +102,28 @@ binaryCounter bc3(num3, c3, b3, up3|c2, down3|b2, btnU|c3, btnC|b3, targetClk);
 //singlePulser bU(uu, btnU, targetClk);
 //singlePulser bC(cc, btnC, targetClk);
 //singlePulser bD(dd, btnD, targetClk);
+//singlePulser spu0(mode, sw[0], targetClk);
 
-//reg [3:0] state;
+reg [2:0] state;
+//reg mode;
 
-//always@(posedge targetClk)
-//begin
-//    if (uu) state = state + 1;
-//    if (dd) state = state - 1;
-//    if (cc) state = 0;
+always@(posedge tclk[24])
+begin
+    if (btnL) state = 7;
+    else state = state + 1;
     
-//    if (state == 15) state = 0; // overflow
-//    if (state == 5) state = 4; // underflow
-    
-//    case(state)
-//        4'b0000: begin num3=0; num2=0; num1=0; num0=0; end
-//        4'b0001: begin num3=0; num2=0; num1=0; num0=1; end
-//        4'b0010: begin num3=0; num2=0; num1=1; num0=1; end
-//        4'b0011: begin num3=0; num2=1; num1=1; num0=1; end
-//        4'b0100: begin num3=1; num2=1; num1=1; num0=1; end
-//    endcase
-//end
+    if (state == 6) state = 0;
+        
+    case(state)
+        3'b000: begin num3=0; num2=0; num1=0; num0=0; end
+        3'b001: begin num3=1; num2=1; num1=1; num0=1; end
+        3'b010: begin num3=2; num2=2; num1=2; num0=2; end
+        3'b011: begin num3=3; num2=3; num1=3; num0=3; end
+        3'b100: begin num3=4; num2=4; num1=4; num0=4; end
+        3'b101: begin num3=5; num2=5; num1=5; num0=5; end
+//        3'b110: begin num3=0; num2=12; num1=0; num0=0; end
+        3'b111: begin num3=15; num2=15; num1=15; num0=15; end
+    endcase
+end
 
 endmodule
