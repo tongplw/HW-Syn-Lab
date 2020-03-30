@@ -1,0 +1,515 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Mar 30 01:37:22 2020
+# Process ID: 10368
+# Current directory: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.runs/synth_1
+# Command line: vivado.exe -log nano_sc_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nano_sc_system.tcl
+# Log file: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.runs/synth_1/nano_sc_system.vds
+# Journal file: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nano_sc_system.tcl -notrace
+Command: synth_design -top nano_sc_system -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24264 
+WARNING: [Synth 8-2611] redeclaration of ansi port clkDiv is not allowed [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/clockDiv.v:8]
+WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/segmentDecoder.v:8]
+WARNING: [Synth 8-2611] redeclaration of ansi port out is not allowed [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/singlePulser.v:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 394.039 ; gain = 113.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'nano_sc_system' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/nano_sc_system.v:10]
+INFO: [Synth 8-6157] synthesizing module 'nanocpu' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/nanocpu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/adder.v:9]
+	Parameter WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (1#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/mux2_1.v:9]
+	Parameter WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1' (2#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extender' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/extender.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'extender' (3#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/extender.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized0' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/mux2_1.v:9]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized0' (3#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/regfile.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (4#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/regfile.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized1' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/mux2_1.v:9]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized1' (4#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/alu.v:9]
+WARNING: [Synth 8-567] referenced signal 'Cin' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/alu.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (5#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/alu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/control.v:10]
+	Parameter ORI bound to: 6'b010000 
+	Parameter ORUI bound to: 6'b010001 
+	Parameter RTYPE bound to: 6'b000001 
+	Parameter LW bound to: 6'b011000 
+	Parameter SW bound to: 6'b011100 
+	Parameter BEQ bound to: 6'b100100 
+	Parameter JMP bound to: 6'b110000 
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/control.v:131]
+WARNING: [Synth 8-567] referenced signal 'reserved' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/control.v:131]
+INFO: [Synth 8-6155] done synthesizing module 'control' (6#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/control.v:10]
+WARNING: [Synth 8-6014] Unused sequential element z_flag_reg was removed.  [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/nanocpu.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'nanocpu' (7#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/nanocpu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rom' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/rom.v:9]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'prog.list' is read successfully [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/rom.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (8#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/rom.v:9]
+INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v:9]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clockDiv' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/clockDiv.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'clockDiv' (9#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/clockDiv.v:3]
+INFO: [Synth 8-6157] synthesizing module 'quadSevenSeg' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/quadSevenSeg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hexTo7Segment' [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/segmentDecoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hexTo7Segment' (10#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/segmentDecoder.v:3]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/quadSevenSeg.v:50]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/quadSevenSeg.v:50]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/quadSevenSeg.v:50]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/quadSevenSeg.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (11#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/new/quadSevenSeg.v:3]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v:58]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v:58]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v:58]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v:58]
+WARNING: [Synth 8-567] referenced signal 'sw' should be on the sensitivity list [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (12#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'nano_sc_system' (13#1) [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/sources_1/imports/Lab5Verilog/nano_sc_system.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 432.590 ; gain = 152.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 432.590 ; gain = 152.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 432.590 ; gain = 152.035
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nano_sc_system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nano_sc_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 758.949 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 758.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 758.949 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 758.949 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 758.949 ; gain = 478.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 758.949 ; gain = 478.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 758.949 ; gain = 478.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "sel_pc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sel_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sel_b" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sel_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ext_ops" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num3" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 758.949 ; gain = 478.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---RAMs : 
+	             160K Bit         RAMs := 1     
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	  44 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   8 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     31 Bit       Adders := 1     
+Module mux2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+Module extender 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module mux2_1__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module mux2_1__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module nanocpu 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	  44 Input     32 Bit        Muxes := 1     
+Module clockDiv 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module quadSevenSeg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 4     
++---RAMs : 
+	             160K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design nano_sc_system has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 758.949 ; gain = 478.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------+----------------------+-----------+----------------------+---------------------------------+
+|Module Name    | RTL Object           | Inference | Size (Depth x Width) | Primitives                      | 
++---------------+----------------------+-----------+----------------------+---------------------------------+
+|nano_sc_system | CPU/REGFILE/regs_reg | Implied   | 32 x 32              | RAM32M x 12                     | 
+|nano_sc_system | DATAMEM/mem_reg      | Implied   | 64 K x 5             | RAM16X1S x 5  RAM256X1S x 640   | 
++---------------+----------------------+-----------+----------------------+---------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 767.426 ; gain = 486.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:29 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++---------------+----------------------+-----------+----------------------+---------------------------------+
+|Module Name    | RTL Object           | Inference | Size (Depth x Width) | Primitives                      | 
++---------------+----------------------+-----------+----------------------+---------------------------------+
+|nano_sc_system | CPU/REGFILE/regs_reg | Implied   | 32 x 32              | RAM32M x 12                     | 
+|nano_sc_system | DATAMEM/mem_reg      | Implied   | 64 K x 5             | RAM16X1S x 5  RAM256X1S x 640   | 
++---------------+----------------------+-----------+----------------------+---------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:31 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    28|
+|3     |LUT1      |    52|
+|4     |LUT2      |   130|
+|5     |LUT3      |    71|
+|6     |LUT4      |    54|
+|7     |LUT5      |   207|
+|8     |LUT6      |   306|
+|9     |MUXF7     |   111|
+|10    |MUXF8     |    40|
+|11    |RAM16X1S  |     5|
+|12    |RAM256X1S |   640|
+|13    |RAM32M    |    12|
+|14    |FDRE      |    44|
+|15    |IBUF      |    13|
+|16    |OBUF      |    12|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------+-------------+------+
+|      |Instance               |Module       |Cells |
++------+-----------------------+-------------+------+
+|1     |top                    |             |  1726|
+|2     |  CPU                  |nanocpu      |   691|
+|3     |    ALU                |alu          |    57|
+|4     |    PCADDER            |adder        |    17|
+|5     |    REGFILE            |regfile      |   599|
+|6     |  DATAMEM              |memory       |  1009|
+|7     |    fdivTarget         |clockDiv     |     2|
+|8     |    \genblk1[0].fdiv   |clockDiv_0   |     2|
+|9     |    \genblk1[10].fdiv  |clockDiv_1   |     2|
+|10    |    \genblk1[11].fdiv  |clockDiv_2   |     2|
+|11    |    \genblk1[12].fdiv  |clockDiv_3   |     2|
+|12    |    \genblk1[13].fdiv  |clockDiv_4   |     2|
+|13    |    \genblk1[14].fdiv  |clockDiv_5   |     2|
+|14    |    \genblk1[15].fdiv  |clockDiv_6   |     2|
+|15    |    \genblk1[16].fdiv  |clockDiv_7   |     2|
+|16    |    \genblk1[17].fdiv  |clockDiv_8   |     2|
+|17    |    \genblk1[1].fdiv   |clockDiv_9   |     2|
+|18    |    \genblk1[2].fdiv   |clockDiv_10  |     2|
+|19    |    \genblk1[3].fdiv   |clockDiv_11  |     2|
+|20    |    \genblk1[4].fdiv   |clockDiv_12  |     2|
+|21    |    \genblk1[5].fdiv   |clockDiv_13  |     2|
+|22    |    \genblk1[6].fdiv   |clockDiv_14  |     2|
+|23    |    \genblk1[7].fdiv   |clockDiv_15  |     2|
+|24    |    \genblk1[8].fdiv   |clockDiv_16  |     2|
+|25    |    \genblk1[9].fdiv   |clockDiv_17  |     2|
+|26    |    quad7seg           |quadSevenSeg |    19|
++------+-----------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 876.625 ; gain = 596.070
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:20 . Memory (MB): peak = 876.625 ; gain = 269.711
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:33 . Memory (MB): peak = 876.625 ; gain = 596.070
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 836 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 876.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 657 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 5 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 640 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+56 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:37 . Memory (MB): peak = 876.625 ; gain = 608.703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 876.625 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.runs/synth_1/nano_sc_system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file nano_sc_system_utilization_synth.rpt -pb nano_sc_system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 30 01:39:05 2020...

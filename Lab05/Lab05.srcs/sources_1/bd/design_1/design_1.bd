@@ -1,0 +1,11 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3"
+    },
+    "design_tree": {}
+  }
+}

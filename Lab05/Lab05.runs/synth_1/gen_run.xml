@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585507038">
+  <File Type="PA-TCL" Name="nano_sc_system.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="nano_sc_system_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="nano_sc_system_reports.tcl"/>
+  <File Type="RDS-RDS" Name="nano_sc_system.vds"/>
+  <File Type="RDS-UTIL" Name="nano_sc_system_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="nano_sc_system_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="nano_sc_system.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="nano_sc_system_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="nano_sc_system_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/adder.v"/>
+        <Attr Name="ImportTime" Val="1551824721"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/alu.v"/>
+        <Attr Name="ImportTime" Val="1551824724"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clockDiv.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/hw-syn-lab-3-lab4/Lab2.srcs/sources_1/new/clockDiv.v"/>
+        <Attr Name="ImportTime" Val="1550311748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/control.v"/>
+        <Attr Name="ImportTime" Val="1551824727"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/extender.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/extender.v"/>
+        <Attr Name="ImportTime" Val="1551824735"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/memory.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/memory.v"/>
+        <Attr Name="ImportTime" Val="1551824737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/mux2_1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/mux2_1.v"/>
+        <Attr Name="ImportTime" Val="1551824736"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/nanocpu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/nanocpu.v"/>
+        <Attr Name="ImportTime" Val="1551824717"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/quadSevenSeg.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/hw-syn-lab-3-lab4/Lab2.srcs/sources_1/new/quadSevenSeg.v"/>
+        <Attr Name="ImportTime" Val="1550311748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/regfile.v"/>
+        <Attr Name="ImportTime" Val="1551824734"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/rom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/rom.v"/>
+        <Attr Name="ImportTime" Val="1551824744"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/segmentDecoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/hw-syn-lab-3-lab4/Lab2.srcs/sources_1/new/segmentDecoder.v"/>
+        <Attr Name="ImportTime" Val="1550311748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/nano_sc_system.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/nano_sc_system.v"/>
+        <Attr Name="ImportTime" Val="1551824695"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mockIO.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DFlipflop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/hw-syn-lab-3-lab4/Lab2.srcs/sources_1/new/DFlipflop.v"/>
+        <Attr Name="ImportTime" Val="1550311748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/inputStabilizer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/hw-syn-lab-3-lab4/Lab2.srcs/sources_1/new/inputStabilizer.v"/>
+        <Attr Name="ImportTime" Val="1550311748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Lab5Verilog/micropc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Lab5Verilog/micropc.v"/>
+        <Attr Name="ImportTime" Val="1551824736"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/singlePulser.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/hw-syn-lab-3-lab4/Lab2.srcs/sources_1/new/singlePulser.v"/>
+        <Attr Name="ImportTime" Val="1550311748"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/prog.list">
+      <FileInfo SFType="MEM">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/prog1.list">
+      <FileInfo SFType="MEM">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data.list">
+      <FileInfo SFType="MEM">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/alu_test.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="nano_sc_system"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraint.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

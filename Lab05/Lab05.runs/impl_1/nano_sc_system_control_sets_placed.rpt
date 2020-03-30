@@ -1,0 +1,223 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon Mar 30 01:43:55 2020
+| Host         : tongplw running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file nano_sc_system_control_sets_placed.rpt
+| Design       : nano_sc_system
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   154 |
+| Unused register locations in slices containing registers |   148 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           18 |
+|      2 |            1 |
+|      4 |            4 |
+|      5 |            1 |
+|      8 |            1 |
+|    16+ |          129 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           24 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              16 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+---------------------------------------------+------------------+------------------+----------------+
+|              Clock Signal              |                Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------------------------------+---------------------------------------------+------------------+------------------+----------------+
+|  DATAMEM/genblk1[0].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[6].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[2].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[3].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[5].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[10].fdiv/clkDiv_reg_0 |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[4].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[7].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[11].fdiv/clkDiv_reg_0 |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[13].fdiv/clkDiv_reg_0 |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[14].fdiv/clkDiv_reg_0 |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[8].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[12].fdiv/clkDiv_reg_0 |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[9].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[16].fdiv/clkDiv_reg_0 |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[15].fdiv/clkDiv_reg_0 |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[1].fdiv/clkDiv_reg_0  |                                             |                  |                1 |              1 |
+|  DATAMEM/genblk1[17].fdiv/clkDiv       |                                             |                  |                1 |              1 |
+|  DATAMEM/fdivTarget/CLK                |                                             |                  |                1 |              2 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/pc_reg[6]_1[0]                  |                  |                3 |              4 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/E[0]                            |                  |                3 |              4 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/pc_reg[6][0]                    |                  |                3 |              4 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/pc_reg[6]_0[0]                  |                  |                3 |              4 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_128 |                  |                4 |              5 |
+|  clk_IBUF_BUFG                         |                                             |                  |                5 |              8 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_111 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_109 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_112 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_113 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_114 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_101 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_123 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_127 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_14  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_16  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_17  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_115 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_108 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_118 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_104 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_121 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_11  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_110 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_106 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_119 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_122 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_13  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_1   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_19  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_2   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_10  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_12  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_124 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_15  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_116 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_0   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_18  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_20  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_21  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_117 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_22  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_23  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_24  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_25  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_100 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_105 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_103 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_107 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_102 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_62  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_74  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_76  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_67  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_66  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_31  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_71  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_69  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_72  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_77  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_3   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_41  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_61  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_8   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_50  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_57  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_80  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_33  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_83  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_78  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_68  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_32  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_59  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_34  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_54  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_45  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_6   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_55  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_64  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_65  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_7   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_35  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_70  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_26  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_79  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_81  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_36  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_82  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_51  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_60  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_75  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_29  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_47  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_48  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_44  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_5   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_40  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_27  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_43  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_53  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_56  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_63  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_73  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_49  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_39  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_42  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_58  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_38  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_4   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_28  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_30  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_37  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_46  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_9   |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_52  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_90  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_88  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_97  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_99  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_98  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_89  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_84  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_93  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_85  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_92  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_94  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_87  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_96  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_86  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_91  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_120 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_125 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_126 |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/regs_reg_r1_0_31_12_17_i_14_95  |                  |                5 |             20 |
+|  clk_IBUF_BUFG                         | CPU/REGFILE/reg_wr                          |                  |               12 |             96 |
++----------------------------------------+---------------------------------------------+------------------+------------------+----------------+
+
+

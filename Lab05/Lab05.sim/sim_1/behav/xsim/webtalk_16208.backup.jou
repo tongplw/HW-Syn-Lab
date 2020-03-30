@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Mar 29 23:07:13 2020
+# Process ID: 16208
+# Current directory: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.sim/sim_1/behav/xsim/xsim.dir/nano_sc_system_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.sim/sim_1/behav/xsim/xsim.dir/nano_sc_system_behav/webtalk/xsim_webtalk.tcl -notrace

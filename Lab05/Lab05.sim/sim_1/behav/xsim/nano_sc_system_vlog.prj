@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/adder.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/alu.v" \
+"../../../../Lab05.srcs/sources_1/imports/new/clockDiv.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/control.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/extender.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/memory.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/mux2_1.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/nanocpu.v" \
+"../../../../Lab05.srcs/sources_1/imports/new/quadSevenSeg.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/regfile.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/rom.v" \
+"../../../../Lab05.srcs/sources_1/imports/new/segmentDecoder.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/nano_sc_system.v" \
+"../../../../Lab05.srcs/sources_1/new/mockIO.v" \
+"../../../../Lab05.srcs/sources_1/imports/new/DFlipflop.v" \
+"../../../../Lab05.srcs/sources_1/imports/new/inputStabilizer.v" \
+"../../../../Lab05.srcs/sources_1/imports/Lab5Verilog/micropc.v" \
+"../../../../Lab05.srcs/sources_1/imports/new/singlePulser.v" \
+"../../../../Lab05.srcs/sources_1/new/alu_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
