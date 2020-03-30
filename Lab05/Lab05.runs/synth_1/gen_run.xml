@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585507038">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585547441">
   <File Type="PA-TCL" Name="nano_sc_system.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="nano_sc_system_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nano_sc_system_reports.tcl"/>

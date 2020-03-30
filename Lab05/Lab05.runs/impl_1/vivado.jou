@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Mar 30 01:39:13 2020
-# Process ID: 18192
+# Start of session at: Mon Mar 30 12:51:54 2020
+# Process ID: 11272
 # Current directory: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.runs/impl_1
 # Command line: vivado.exe -log nano_sc_system.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nano_sc_system.tcl -notrace
 # Log file: C:/Users/tongplw/Desktop/Vivado/Lab05/Lab05.runs/impl_1/nano_sc_system.vdi

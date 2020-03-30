@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585507038">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1585547441">
   <File Type="BITSTR-BMM" Name="nano_sc_system_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="nano_sc_system_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="nano_sc_system_timing_summary_init.rpt"/>

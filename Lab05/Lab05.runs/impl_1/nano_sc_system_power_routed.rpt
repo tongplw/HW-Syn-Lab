@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon Mar 30 01:47:06 2020
+| Date             : Mon Mar 30 12:59:16 2020
 | Host             : tongplw running 64-bit major release  (build 9200)
 | Command          : report_power -file nano_sc_system_power_routed.rpt -pb nano_sc_system_power_summary_routed.pb -rpx nano_sc_system_power_routed.rpx
 | Design           : nano_sc_system
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.258        |
+| Total On-Chip Power (W)  | 0.269        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.186        |
+| Dynamic (W)              | 0.197        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 83.7         |
@@ -53,17 +53,17 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.005 |        3 |       --- |             --- |
-| Slice Logic              |     0.021 |     5675 |       --- |             --- |
-|   LUT as Logic           |     0.012 |      739 |     20800 |            3.55 |
-|   LUT as Distributed RAM |     0.007 |     2613 |      9600 |           27.22 |
+| Slice Logic              |     0.021 |     5676 |       --- |             --- |
+|   LUT as Logic           |     0.013 |      744 |     20800 |            3.58 |
+|   LUT as Distributed RAM |     0.006 |     2613 |      9600 |           27.22 |
 |   F7/F8 Muxes            |     0.002 |     2071 |     32600 |            6.35 |
 |   CARRY4                 |    <0.001 |       28 |      8150 |            0.34 |
 |   Register               |    <0.001 |       44 |     41600 |            0.11 |
 |   Others                 |     0.000 |       51 |       --- |             --- |
-| Signals                  |     0.140 |     1434 |       --- |             --- |
-| I/O                      |     0.020 |       25 |       106 |           23.58 |
+| Signals                  |     0.151 |     1435 |       --- |             --- |
+| I/O                      |     0.019 |       25 |       106 |           23.58 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.258 |          |           |                 |
+| Total                    |     0.269 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.175 |       0.166 |      0.010 |
+| Vccint    |       1.000 |     0.188 |       0.178 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.001 |      0.013 |
-| Vcco33    |       3.300 |     0.007 |       0.006 |      0.001 |
+| Vcco33    |       3.300 |     0.006 |       0.005 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -142,11 +142,11 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| nano_sc_system |     0.186 |
-|   CPU          |     0.142 |
-|     ALU        |     0.016 |
-|     REGFILE    |     0.125 |
-|   DATAMEM      |     0.023 |
+| nano_sc_system |     0.197 |
+|   CPU          |     0.156 |
+|     ALU        |     0.011 |
+|     REGFILE    |     0.142 |
+|   DATAMEM      |     0.022 |
 +----------------+-----------+
 
 
