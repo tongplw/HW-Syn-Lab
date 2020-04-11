@@ -1,4 +1,4 @@
-`timescale 1ps / 1ps
+`timescale 0.1ps / 0.1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: Computer Engineering Department, Chulalongkorn University
 // Engineer: tan14007
@@ -135,6 +135,7 @@ begin
     if(((i-HEIGHT/2)*(i-HEIGHT/2) + (j-WIDTH/2)*(j-WIDTH/2) <= 100*100) && 
     (screen[i][j][0] != 15 || screen[i][j][1] != 15 || screen[i][j][2] != 15))
     begin
+        $display(i, j);
         incorrect_1 = incorrect_1 + 1; 
     end
     if(((i-HEIGHT/2)*(i-HEIGHT/2) + (j-WIDTH/2)*(j-WIDTH/2) > 100*100) && 
