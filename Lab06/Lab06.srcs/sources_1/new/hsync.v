@@ -28,7 +28,7 @@ module hsync(
     
     always @(posedge clk)
     begin
-        if (h_val == 799) begin h_val = 0; line_clk = 1; end
+        if (h_val == 800) begin h_val = 0; line_clk = 1; end
         else begin h_val = h_val + 1; line_clk = 0; end
     end
 endmodule

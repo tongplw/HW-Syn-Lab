@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Apr 12 16:42:24 2020
+# Process ID: 6608
+# Current directory: C:/Users/tongplw/Desktop/Vivado/Lab06/Lab06.runs/synth_1
+# Command line: vivado.exe -log uartSystem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uartSystem.tcl
+# Log file: C:/Users/tongplw/Desktop/Vivado/Lab06/Lab06.runs/synth_1/uartSystem.vds
+# Journal file: C:/Users/tongplw/Desktop/Vivado/Lab06/Lab06.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uartSystem.tcl -notrace

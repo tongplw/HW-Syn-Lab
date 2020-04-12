@@ -28,7 +28,7 @@ module vsync(
     
     always @(posedge line_clk)
     begin
-        if (v_val == 524) v_val = 0;
+        if (v_val == 525) v_val = 0;
         else v_val = v_val + 1;
     end
 endmodule

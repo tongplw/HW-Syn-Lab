@@ -35,8 +35,8 @@ module vgaSystem(
     hsync hs(clk, line_clk, h_val);
     vsync vs(clk, line_clk, v_val);
     
-    assign Hsync = (h_val < 640) ? 1 : 0;
-    assign Vsync = (v_val < 480) ? 1 : 0;
+    assign Hsync = (h_val < 687) ? 1 : 0;
+    assign Vsync = (v_val < 511) ? 1 : 0;
     
-    assign {vgaRed, vgaGreen, vgaBlue} = ((h_val-320)**2 + (v_val-240)**2 <= 100**2) ? 12'hfff : 12'h000;
+    assign {vgaRed, vgaGreen, vgaBlue} = ((h_val-367)**2 + (v_val-273)**2 <= 100**2) ? 12'hfff : 12'h000;
 endmodule

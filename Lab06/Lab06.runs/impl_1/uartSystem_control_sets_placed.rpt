@@ -1,0 +1,83 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Apr 12 16:43:47 2020
+| Host         : tongplw running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file uartSystem_control_sets_placed.rpt
+| Design       : uartSystem
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    77 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           10 |
+|      8 |            4 |
+|      9 |            1 |
+|    16+ |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              48 |           13 |
+| Yes          | No                    | No                     |              24 |           14 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               1 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------+--------------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          |           Set/Reset Signal           | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+--------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                  |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[0]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[2]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[1]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[3]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[4]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[5]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[6]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/receiver/data_out[7]        |                                      |                1 |              1 |
+|  baud_BUFG     | uart/transmitter/bit_out         | uart/transmitter/bit_out0            |                1 |              1 |
+|  baud_BUFG     |                                  | uart/receiver/count[7]_i_1_n_0       |                3 |              8 |
+|  baud_BUFG     |                                  | uart/transmitter/count[7]_i_1__0_n_0 |                2 |              8 |
+|  baud_BUFG     | uart/receiver/E[0]               |                                      |                4 |              8 |
+|  baud_BUFG     | uart/transmitter/temp[7]_i_1_n_0 |                                      |                2 |              8 |
+|  baud_BUFG     |                                  |                                      |                4 |              9 |
+|  clk_IBUF_BUFG |                                  | uart/br/clear                        |                8 |             32 |
++----------------+----------------------------------+--------------------------------------+------------------+----------------+
+
+
