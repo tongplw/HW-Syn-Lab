@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sun Apr 12 16:44:19 2020
+| Date             : Sun Apr 12 17:23:38 2020
 | Host             : tongplw running 64-bit major release  (build 9200)
 | Command          : report_power -file uartSystem_power_routed.rpt -pb uartSystem_power_summary_routed.pb -rpx uartSystem_power_routed.rpx
 | Design           : uartSystem
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.073        |
+| Total On-Chip Power (W)  | 0.069        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.001        |
-| Device Static (W)        | 0.072        |
+| Device Static (W)        | 0.068        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.7         |
+| Junction Temperature (C) | 25.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      166 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       46 |     20800 |            0.22 |
+| Slice Logic    |    <0.001 |      172 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       56 |     20800 |            0.27 |
 |   CARRY4       |    <0.001 |       16 |      8150 |            0.20 |
-|   Register     |    <0.001 |       83 |     41600 |            0.20 |
+|   Register     |    <0.001 |       77 |     41600 |            0.19 |
 |   Others       |     0.000 |        8 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |    <0.001 |      167 |       --- |             --- |
-| I/O            |    <0.001 |       19 |       106 |           17.92 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.073 |          |           |                 |
+| Signals        |    <0.001 |      168 |       --- |             --- |
+| I/O            |    <0.001 |        3 |       106 |            2.83 |
+| Static Power   |     0.068 |          |           |                 |
+| Total          |     0.069 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |
+| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -138,11 +138,8 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------+-----------+
-| Name       | Power (W) |
-+------------+-----------+
-| uartSystem |     0.001 |
-|   uart     |     0.001 |
-+------------+-----------+
++------+-----------+
+| Name | Power (W) |
++------+-----------+
 
 

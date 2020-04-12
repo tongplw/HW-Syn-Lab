@@ -1,7 +1,7 @@
 `timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Computer Engineering Department, Chulalongkorn University
+// Engineer: Pollawat Hongwimol
 // 
 // Create Date: 04/11/2020 10:56:01 PM
 // Design Name: 

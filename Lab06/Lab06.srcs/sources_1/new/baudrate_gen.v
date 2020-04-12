@@ -3,9 +3,9 @@
 // Company: Computer Engineering Department, Chulalongkorn University
 // Engineer: Pollawat Hongwimol
 // 
-// Create Date: 04/11/2020 10:55:48 PM
+// Create Date: 04/12/2020 04:46:50 PM
 // Design Name: 
-// Module Name: hsync
+// Module Name: baudrate_gen
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,15 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module hsync(
+module baudrate_gen(
     input clk,
-    output reg line_clk = 0,
-    output reg [15:0] h_val = 0
+    output reg baud
     );
     
+    integer counter;
     always @(posedge clk)
     begin
-        if (h_val == 800) begin h_val = 0; line_clk = 1; end
-        else begin h_val = h_val + 1; line_clk = 0; end
+        counter = counter + 1;
+        if (counter == 325) begin counter = 0; baud = ~baud; end
     end
 endmodule
